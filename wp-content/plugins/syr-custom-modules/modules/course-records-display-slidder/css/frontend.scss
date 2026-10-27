@@ -1,0 +1,597 @@
+$color_1: inherit;
+$color_2: transparent;
+$color_3: #000;
+$color_4: black;
+$font-family_1: 'Font Awesome 5 Free';
+$font-family_2: inherit;
+
+.uabb-blog-posts-carousel {
+  .uabb-blog-post-inner-wrap.uabb-thumbnail-position-left {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .uabb-blog-post-inner-wrap.uabb-thumbnail-position-right {
+    display: inline-block;
+    width: 100%;
+  }
+
+  overflow: visible !important;
+
+  ul.slick-dots {
+    li.slick-active {
+      button {
+        &:before {
+          opacity: 0.75;
+          color: $color_4;
+        }
+      }
+    }
+  }
+}
+
+.uabb-blog-posts {
+  .uabb-post-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+    outline: none;
+    margin-bottom: 30px;
+  }
+
+  ul.slick-dots {
+    display: block;
+    position: relative;
+    margin: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+
+    li {
+      position: relative;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin: 0;
+      padding: 0;
+      cursor: pointer;
+
+      button {
+        font-size: 0;
+        line-height: 0;
+        display: block;
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+        cursor: pointer;
+        color: $color_2;
+        border: 0;
+        outline: none;
+        background: transparent;
+
+        &:before {
+          font-family: $font-family_1;
+          font-weight: 900;
+          font-size: 6px;
+          line-height: 20px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 20px;
+          height: 20px;
+          content: '\f111';
+          text-align: center;
+          opacity: .25;
+          color: $color_3;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+      }
+    }
+  }
+
+  .slick-prev {
+    i {
+      font-size: 20px;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+      box-sizing: content-box;
+
+      &:hover {
+        font-size: 20px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        box-sizing: content-box;
+      }
+
+      &:focus {
+        font-size: 20px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        box-sizing: content-box;
+      }
+    }
+
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: $color_2;
+    border: none;
+    outline: none;
+    background: transparent;
+    left: -45px;
+    z-index: 1;
+
+    &:hover {
+      font-size: 0;
+      line-height: 0;
+      position: absolute;
+      top: 50%;
+      display: block;
+      width: auto;
+      height: auto;
+      padding: 0;
+      -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      cursor: pointer;
+      color: $color_2;
+      border: none;
+      outline: none;
+      background: transparent;
+
+      &:before {
+        opacity: 1;
+      }
+    }
+
+    &:focus {
+      font-size: 0;
+      line-height: 0;
+      position: absolute;
+      top: 50%;
+      display: block;
+      width: auto;
+      height: auto;
+      padding: 0;
+      -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      cursor: pointer;
+      color: $color_2;
+      border: none;
+      outline: none;
+      background: transparent;
+
+      &:before {
+        opacity: 1;
+      }
+    }
+
+    &:before {
+      content: '';
+      font-size: 0;
+      line-height: 0;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  }
+
+  .slick-next {
+    i {
+      font-size: 20px;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+      box-sizing: content-box;
+
+      &:hover {
+        font-size: 20px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        box-sizing: content-box;
+      }
+
+      &:focus {
+        font-size: 20px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        box-sizing: content-box;
+      }
+    }
+
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: $color_2;
+    border: none;
+    outline: none;
+    background: transparent;
+    right: -45px;
+    z-index: 1;
+
+    &:hover {
+      font-size: 0;
+      line-height: 0;
+      position: absolute;
+      top: 50%;
+      display: block;
+      width: auto;
+      height: auto;
+      padding: 0;
+      -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      cursor: pointer;
+      color: $color_2;
+      border: none;
+      outline: none;
+      background: transparent;
+
+      &:before {
+        opacity: 1;
+      }
+    }
+
+    &:focus {
+      font-size: 0;
+      line-height: 0;
+      position: absolute;
+      top: 50%;
+      display: block;
+      width: auto;
+      height: auto;
+      padding: 0;
+      -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      cursor: pointer;
+      color: $color_2;
+      border: none;
+      outline: none;
+      background: transparent;
+
+      &:before {
+        opacity: 1;
+      }
+    }
+
+    &:before {
+      content: '';
+      font-size: 0;
+      line-height: 0;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  }
+
+  .slick-prev.slick-disabled {
+    &:before {
+      opacity: .25;
+    }
+  }
+
+  .slick-next.slick-disabled {
+    &:before {
+      opacity: .25;
+    }
+  }
+
+  .slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+  }
+
+  .slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+
+    &:before {
+      display: table;
+      content: '';
+    }
+
+    &:after {
+      display: table;
+      content: '';
+      clear: both;
+    }
+  }
+
+  .slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+
+    img {
+      display: block;
+    }
+  }
+
+  .slick-slide.dragging {
+    img {
+      pointer-events: none;
+    }
+  }
+
+  .slick-vertical {
+    .slick-slide {
+      display: block;
+      height: auto;
+      border: 1px solid transparent;
+    }
+  }
+
+  .slick-arrow {
+    box-shadow: none;
+
+    &:active {
+      box-shadow: none;
+    }
+
+    &:hover {
+      box-shadow: none;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  overflow: hidden;
+
+  .slick-loading {
+    .slick-track {
+      visibility: hidden;
+    }
+
+    .slick-slide {
+      visibility: hidden;
+    }
+  }
+
+  .slick-slide.slick-loading {
+    img {
+      display: none;
+    }
+  }
+
+  .slick-arrow.slick-hidden {
+    display: none;
+  }
+}
+
+.uabb-blog-posts-col-8 {
+  width: 12.5%;
+}
+
+.uabb-blog-posts-col-7 {
+  width: 14.28%;
+}
+
+.uabb-blog-posts-col-6 {
+  width: 16.66%;
+}
+
+.uabb-blog-posts-col-5 {
+  width: 20%;
+}
+
+.uabb-blog-posts-col-4 {
+  width: 25%;
+}
+
+.uabb-blog-posts-col-3 {
+  width: 33.33%;
+}
+
+.uabb-blog-posts-col-2 {
+  width: 50%;
+}
+
+.uabb-next-right-arrow {
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+.uabb-post-wrapper {
+  border-top: 0 solid #e5e5e5;
+  border-radius: 0;
+  position: relative;
+  z-index: 1;
+
+  .uabb-post-thumbnail {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+  }
+
+  .uabb-vertical-wrap {
+    display: table;
+    width: 100%;
+    height: 100%;
+  }
+
+  .uabb-vertical {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .uabb-icon-anchor {
+    display: inline-block;
+    margin: .75em;
+    vertical-align: middle;
+    outline: none;
+    text-decoration: none;
+  }
+
+  .uabb-text-overflow {
+    text-align: left;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    padding: 0;
+  }
+
+  .uabb-post-heading {
+    margin: 0;
+    padding: 0;
+
+    a {
+      font: inherit;
+      color: $color_1;
+    }
+  }
+}
+
+.uabb-blog-posts.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+
+  .slick-track {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+ul.uabb-masonary-filters {
+  padding: 0;
+
+  > li {
+    border-style: none;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 5px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+.uabb-module-content {
+  .uabb-text-editor {
+    &:not(a) {
+      color: $color_1;
+    }
+
+    &:not(i) {
+      font-family: $font-family_2;
+    }
+
+    &:not(h1) {
+      &:not(h2) {
+        &:not(h3) {
+          &:not(h4) {
+            &:not(h5) {
+              &:not(h6) {
+                font-size: inherit;
+                line-height: inherit;
+
+                &:not(strong) {
+                  &:not(b) {
+                    font-weight: inherit;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.uabb-blog-post-inner-wrap.uabb-thumbnail-position-left {
+  overflow: hidden;
+}
+
+.uabb-blog-post-inner-wrap.uabb-thumbnail-position-right {
+  overflow: hidden;
+}
+
+.uabb-blog-posts-col-1 {
+  width: 100%;
+}
+
+
+.uabb-blog-posts.slick-initialized {
+  .slick-slide {
+    display: block;
+  }
+}
+

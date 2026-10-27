@@ -1,0 +1,138 @@
+.syr-search-form {
+    position: relative;
+}
+.syr-search-form-wrap {
+    display: inline-flex;
+    max-width: 100%;
+    align-items: center;
+    position: relative;
+}
+.syr-search-form-fields {
+    flex-basis: 100%;
+}
+.syr-search-form .syr-form-field input,
+.syr-search-form .syr-form-field input[type=search] {
+    height: auto;
+    width: 100%;
+}
+.syr-search-button-expand .syr-search-form-fields,
+.syr-search-form-inline .syr-search-form-fields {
+    align-items: center;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    max-width: 100%;
+}
+
+/* Form layout */
+.syr-search-form-width-full .syr-search-form-wrap {
+    width: 100%;
+}
+.syr-search-form-input-wrap {
+    position: relative;
+}
+
+/* Input field */
+.syr-form-field {
+    display: flex;
+    align-items: center;
+}
+.syr-search-form-input .syr-form-field,
+.syr-search-form-button .syr-form-field,
+.syr-search-form-inline .syr-form-field {
+    margin: 0;
+}
+
+
+/* Button layout - Fullscreen */
+.syr-search-button-fullscreen.syr-search-button-center .syr-search-form-wrap {
+    justify-content: center;
+}
+.syr-search-button-fullscreen.syr-search-button-left .syr-search-form-wrap {
+    justify-content: flex-start;
+}
+.syr-search-button-fullscreen.syr-search-button-right .syr-search-form-wrap {
+    justify-content: flex-end;
+}
+.syr-search-button-fullscreen .syr-search-form-fields {
+    display: contents;
+}
+.syr-search-button-fullscreen .syr-search-form-input-wrap {
+    display: none;
+    transform: translate(40px, 0);
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+}
+.syr-search-button-fullscreen.search-active .syr-search-form-input-wrap {
+    z-index: 9999;
+    display: block;
+    transform: none;
+    pointer-events: all;
+}
+.syr-search-button-fullscreen .syr-search-close {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.6em;
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+.syr-search-button-fullscreen.search-active .syr-search-close {
+    display: block;
+    transform: rotate(-90deg);
+}
+.syr-search-button-fullscreen.search-active .syr-button-wrap {
+    display: none;
+}
+.syr-search-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding:0 15%;
+    opacity: 0;
+    background: rgba(0,0,0,0.75);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.syr-search-form.syr-search-button-fullscreen .syr-form-field input[type=search]{
+    width: 80%;
+    font-size: 40px;
+}
+
+.syr-search-button-fullscreen input[type=search] {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 60px;
+    text-align: center;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+    border-bottom-width: 2px;
+    border-radius: 0;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+    transform: translate(-50%, -50%);
+}
+.syr-search-button-fullscreen.search-active .syr-search-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.syr-search-button img {
+    height: 24px;
+    width: 24px;
+}

@@ -1,0 +1,1029 @@
+{
+    "packages": [
+        {
+            "name": "decodelabs/archetype",
+            "version": "v0.3.5",
+            "version_normalized": "0.3.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/decodelabs/archetype.git",
+                "reference": "5db4e28f054bd17de351d03435f5c8d98fc997b3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/decodelabs/archetype/zipball/5db4e28f054bd17de351d03435f5c8d98fc997b3",
+                "reference": "5db4e28f054bd17de351d03435f5c8d98fc997b3",
+                "shasum": ""
+            },
+            "require": {
+                "decodelabs/exceptional": "^0.4",
+                "decodelabs/glitch-support": "^0.4",
+                "decodelabs/veneer": "^0.10.10",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "decodelabs/phpstan-decodelabs": "^0.6.6"
+            },
+            "time": "2024-05-21T10:22:04+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.3.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "src/Handler.php"
+                ],
+                "psr-4": {
+                    "DecodeLabs\\Archetype\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Wright",
+                    "email": "tom@inflatablecookie.com"
+                }
+            ],
+            "description": "Simple named library loader",
+            "keywords": [
+                "finder",
+                "library",
+                "loader"
+            ],
+            "support": {
+                "issues": "https://github.com/decodelabs/archetype/issues",
+                "source": "https://github.com/decodelabs/archetype/tree/v0.3.5"
+            },
+            "install-path": "../decodelabs/archetype"
+        },
+        {
+            "name": "decodelabs/coercion",
+            "version": "v0.2.8",
+            "version_normalized": "0.2.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/decodelabs/coercion.git",
+                "reference": "ad9f5d7692d3158ee4b5fbf4e3f19510f06b8d75"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/decodelabs/coercion/zipball/ad9f5d7692d3158ee4b5fbf4e3f19510f06b8d75",
+                "reference": "ad9f5d7692d3158ee4b5fbf4e3f19510f06b8d75",
+                "shasum": ""
+            },
+            "require": {
+                "decodelabs/exceptional": "^0.4",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "decodelabs/phpstan-decodelabs": "^0.6"
+            },
+            "time": "2023-11-27T10:29:48+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.2.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "DecodeLabs\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Wright",
+                    "email": "tom@inflatablecookie.com"
+                }
+            ],
+            "description": "Simple tools for managing PHP types",
+            "keywords": [
+                "data",
+                "structure",
+                "type"
+            ],
+            "support": {
+                "issues": "https://github.com/decodelabs/coercion/issues",
+                "source": "https://github.com/decodelabs/coercion/tree/v0.2.8"
+            },
+            "install-path": "../decodelabs/coercion"
+        },
+        {
+            "name": "decodelabs/collections",
+            "version": "v0.8.8",
+            "version_normalized": "0.8.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/decodelabs/collections.git",
+                "reference": "a1e134ad256ab5ee9e6c5e28d4ed44ce615727f9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/decodelabs/collections/zipball/a1e134ad256ab5ee9e6c5e28d4ed44ce615727f9",
+                "reference": "a1e134ad256ab5ee9e6c5e28d4ed44ce615727f9",
+                "shasum": ""
+            },
+            "require": {
+                "decodelabs/coercion": "^0.2",
+                "decodelabs/exceptional": "^0.4",
+                "decodelabs/fluidity": "^0.3",
+                "decodelabs/lucid-support": "^0.3",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "decodelabs/phpstan-decodelabs": "^0.6"
+            },
+            "suggest": {
+                "decodelabs/lucid": "Value sanitising and validation"
+            },
+            "time": "2023-11-08T11:25:19+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.8.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "DecodeLabs\\Collections\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Wright",
+                    "email": "tom@inflatablecookie.com"
+                }
+            ],
+            "description": "Reusable collection components",
+            "keywords": [
+                "collection",
+                "data",
+                "structure"
+            ],
+            "support": {
+                "issues": "https://github.com/decodelabs/collections/issues",
+                "source": "https://github.com/decodelabs/collections/tree/v0.8.8"
+            },
+            "install-path": "../decodelabs/collections"
+        },
+        {
+            "name": "decodelabs/cosmos",
+            "version": "v0.1.4",
+            "version_normalized": "0.1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/decodelabs/cosmos.git",
+                "reference": "db5a1ebecdf3689936c75663f4f682d25d5cc506"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/decodelabs/cosmos/zipball/db5a1ebecdf3689936c75663f4f682d25d5cc506",
+                "reference": "db5a1ebecdf3689936c75663f4f682d25d5cc506",
+                "shasum": ""
+            },
+            "require": {
+                "decodelabs/exceptional": "^0.4.3",
+                "decodelabs/glitch-support": "^0.4.3",
+                "decodelabs/veneer": "^0.10.16",
+                "ext-intl": "*",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "decodelabs/phpstan-decodelabs": "^0.6.5"
+            },
+            "time": "2024-04-29T09:19:18+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.1.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "src/Context.php"
+                ],
+                "psr-4": {
+                    "DecodeLabs\\Cosmos\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Wright",
+                    "email": "tom@inflatablecookie.com"
+                }
+            ],
+            "description": "Internationalisation made simple",
+            "support": {
+                "issues": "https://github.com/decodelabs/cosmos/issues",
+                "source": "https://github.com/decodelabs/cosmos/tree/v0.1.4"
+            },
+            "install-path": "../decodelabs/cosmos"
+        },
+        {
+            "name": "decodelabs/elementary",
+            "version": "v0.3.0",
+            "version_normalized": "0.3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/decodelabs/elementary.git",
+                "reference": "8e5776b1bdcfbaeeaf7db8909e13fe042362187a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/decodelabs/elementary/zipball/8e5776b1bdcfbaeeaf7db8909e13fe042362187a",
+                "reference": "8e5776b1bdcfbaeeaf7db8909e13fe042362187a",
+                "shasum": ""
+            },
+            "require": {
+                "decodelabs/coercion": "^0.2",
+                "decodelabs/collections": "^0.8",
+                "decodelabs/exceptional": "^0.4",
+                "decodelabs/glitch-support": "^0.4",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "decodelabs/phpstan-decodelabs": "^0.6"
+            },
+            "time": "2024-05-07T13:46:07+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.3.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "DecodeLabs\\Elementary\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Wright",
+                    "email": "tom@inflatablecookie.com"
+                }
+            ],
+            "description": "Shared base markup handling library",
+            "keywords": [
+                "html",
+                "markup",
+                "xml"
+            ],
+            "support": {
+                "issues": "https://github.com/decodelabs/elementary/issues",
+                "source": "https://github.com/decodelabs/elementary/tree/v0.3.0"
+            },
+            "install-path": "../decodelabs/elementary"
+        },
+        {
+            "name": "decodelabs/exceptional",
+            "version": "v0.4.5",
+            "version_normalized": "0.4.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/decodelabs/exceptional.git",
+                "reference": "2583222d526039616dd52284240b38aa5965e393"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/decodelabs/exceptional/zipball/2583222d526039616dd52284240b38aa5965e393",
+                "reference": "2583222d526039616dd52284240b38aa5965e393",
+                "shasum": ""
+            },
+            "require": {
+                "decodelabs/coercion": "^0.2",
+                "decodelabs/glitch-support": "^0.4",
+                "decodelabs/wellspring": "^0.1.0",
+                "php": "^8.1",
+                "symfony/polyfill-mbstring": "^1.7"
+            },
+            "require-dev": {
+                "decodelabs/phpstan-decodelabs": "^0.6"
+            },
+            "time": "2024-03-04T17:35:36+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.4.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "DecodeLabs\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Wright",
+                    "email": "tom@inflatablecookie.com"
+                }
+            ],
+            "description": "Better Exceptions for PHP",
+            "keywords": [
+                "exception"
+            ],
+            "support": {
+                "issues": "https://github.com/decodelabs/exceptional/issues",
+                "source": "https://github.com/decodelabs/exceptional/tree/v0.4.5"
+            },
+            "install-path": "../decodelabs/exceptional"
+        },
+        {
+            "name": "decodelabs/fluidity",
+            "version": "v0.3.4",
+            "version_normalized": "0.3.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/decodelabs/fluidity.git",
+                "reference": "2ec4643094d750da6929416feb6aad772ad07cf1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/decodelabs/fluidity/zipball/2ec4643094d750da6929416feb6aad772ad07cf1",
+                "reference": "2ec4643094d750da6929416feb6aad772ad07cf1",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "decodelabs/phpstan-decodelabs": "^0.6"
+            },
+            "time": "2023-09-26T09:13:51+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.3.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "DecodeLabs\\Fluidity\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Wright",
+                    "email": "tom@inflatablecookie.com"
+                }
+            ],
+            "description": "Tools for creating fluent interfaces",
+            "keywords": [
+                "fluent",
+                "fluid",
+                "library",
+                "tools"
+            ],
+            "support": {
+                "issues": "https://github.com/decodelabs/fluidity/issues",
+                "source": "https://github.com/decodelabs/fluidity/tree/v0.3.4"
+            },
+            "install-path": "../decodelabs/fluidity"
+        },
+        {
+            "name": "decodelabs/glitch-support",
+            "version": "v0.4.6",
+            "version_normalized": "0.4.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/decodelabs/glitch-support.git",
+                "reference": "4a5cee84024b47bcabafd012bbc92a91f3314535"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/decodelabs/glitch-support/zipball/4a5cee84024b47bcabafd012bbc92a91f3314535",
+                "reference": "4a5cee84024b47bcabafd012bbc92a91f3314535",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "decodelabs/phpstan-decodelabs": "^0.6"
+            },
+            "time": "2024-06-19T09:11:44+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.4.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "DecodeLabs\\Glitch\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Wright",
+                    "email": "tom@inflatablecookie.com"
+                }
+            ],
+            "description": "Shared support classes for DecodeLabs\\Glitch",
+            "keywords": [
+                "debug",
+                "dump",
+                "dumper",
+                "exception"
+            ],
+            "support": {
+                "issues": "https://github.com/decodelabs/glitch-support/issues",
+                "source": "https://github.com/decodelabs/glitch-support/tree/v0.4.6"
+            },
+            "install-path": "../decodelabs/glitch-support"
+        },
+        {
+            "name": "decodelabs/lucid-support",
+            "version": "v0.3.0",
+            "version_normalized": "0.3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/decodelabs/lucid-support.git",
+                "reference": "a37c323459ed89dfdc996b50192c4e46cc6606ec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/decodelabs/lucid-support/zipball/a37c323459ed89dfdc996b50192c4e46cc6606ec",
+                "reference": "a37c323459ed89dfdc996b50192c4e46cc6606ec",
+                "shasum": ""
+            },
+            "require": {
+                "decodelabs/coercion": "^0.2.2",
+                "decodelabs/exceptional": "^0.4",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "decodelabs/phpstan-decodelabs": "^0.6"
+            },
+            "time": "2023-10-18T11:09:18+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.3.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "DecodeLabs\\Lucid\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Wright",
+                    "email": "tom@inflatablecookie.com"
+                }
+            ],
+            "description": "Support Lucid sanitisation in your libraries without the dependencies",
+            "keywords": [
+                "input",
+                "sanitisation",
+                "support",
+                "validation"
+            ],
+            "support": {
+                "issues": "https://github.com/decodelabs/lucid-support/issues",
+                "source": "https://github.com/decodelabs/lucid-support/tree/v0.3.0"
+            },
+            "install-path": "../decodelabs/lucid-support"
+        },
+        {
+            "name": "decodelabs/slingshot",
+            "version": "v0.1.9",
+            "version_normalized": "0.1.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/decodelabs/slingshot.git",
+                "reference": "17e9aa10e72ecf2949033b05cf1184576900b985"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/decodelabs/slingshot/zipball/17e9aa10e72ecf2949033b05cf1184576900b985",
+                "reference": "17e9aa10e72ecf2949033b05cf1184576900b985",
+                "shasum": ""
+            },
+            "require": {
+                "decodelabs/archetype": "^0.3",
+                "decodelabs/exceptional": "^0.4.4",
+                "php": "^8.1",
+                "psr/container": "^2.0"
+            },
+            "require-dev": {
+                "decodelabs/dovetail": "^0.2.1",
+                "decodelabs/genesis": "^0.8.3",
+                "decodelabs/pandora": "^0.2.12",
+                "decodelabs/phpstan-decodelabs": "^0.6.7"
+            },
+            "time": "2024-04-26T17:33:06+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.1.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Wright",
+                    "email": "tom@inflatablecookie.com"
+                }
+            ],
+            "description": "Unified dependency injection invoker",
+            "support": {
+                "issues": "https://github.com/decodelabs/slingshot/issues",
+                "source": "https://github.com/decodelabs/slingshot/tree/v0.1.9"
+            },
+            "install-path": "../decodelabs/slingshot"
+        },
+        {
+            "name": "decodelabs/tagged",
+            "version": "v0.15.3",
+            "version_normalized": "0.15.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/decodelabs/tagged.git",
+                "reference": "1c2e84618c90ed975311e74295e261bd3c8e626a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/decodelabs/tagged/zipball/1c2e84618c90ed975311e74295e261bd3c8e626a",
+                "reference": "1c2e84618c90ed975311e74295e261bd3c8e626a",
+                "shasum": ""
+            },
+            "require": {
+                "decodelabs/coercion": "^0.2",
+                "decodelabs/collections": "^0.8",
+                "decodelabs/cosmos": "^0.1.2",
+                "decodelabs/elementary": "^0.3",
+                "decodelabs/exceptional": "^0.4",
+                "decodelabs/glitch-support": "^0.4",
+                "decodelabs/veneer": "^0.10.10",
+                "ext-intl": "*",
+                "php": "^8.1",
+                "symfony/polyfill-mbstring": "^1.7"
+            },
+            "require-dev": {
+                "decodelabs/phpstan-decodelabs": "^0.6"
+            },
+            "suggest": {
+                "nesbot/carbon": "Support for time interval formatting"
+            },
+            "time": "2024-06-20T14:14:12+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.15.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "src/Factory.php"
+                ],
+                "psr-4": {
+                    "DecodeLabs\\Tagged\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Wright",
+                    "email": "tom@inflatablecookie.com"
+                }
+            ],
+            "description": "PHP markup generation without the fuss",
+            "keywords": [
+                "generator",
+                "html",
+                "markup"
+            ],
+            "support": {
+                "issues": "https://github.com/decodelabs/tagged/issues",
+                "source": "https://github.com/decodelabs/tagged/tree/v0.15.3"
+            },
+            "install-path": "../decodelabs/tagged"
+        },
+        {
+            "name": "decodelabs/veneer",
+            "version": "v0.10.25",
+            "version_normalized": "0.10.25.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/decodelabs/veneer.git",
+                "reference": "d8b494a55c18160ca13efdf9437d7b3bf9c7c1a7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/decodelabs/veneer/zipball/d8b494a55c18160ca13efdf9437d7b3bf9c7c1a7",
+                "reference": "d8b494a55c18160ca13efdf9437d7b3bf9c7c1a7",
+                "shasum": ""
+            },
+            "require": {
+                "decodelabs/exceptional": "^0.4",
+                "decodelabs/glitch-support": "^0.4",
+                "decodelabs/slingshot": "^0.1.1",
+                "php": "^8.1",
+                "psr/container": "^2"
+            },
+            "require-dev": {
+                "composer-runtime-api": "^2.2",
+                "decodelabs/pandora": "^0.2.11",
+                "decodelabs/phpstan-decodelabs": "^0.6"
+            },
+            "time": "2024-04-29T12:52:18+00:00",
+            "bin": [
+                "bin/veneer-stub"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.10.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "DecodeLabs\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Wright",
+                    "email": "tom@inflatablecookie.com"
+                }
+            ],
+            "description": "Automated static facades",
+            "keywords": [
+                "facade",
+                "library",
+                "tools"
+            ],
+            "support": {
+                "issues": "https://github.com/decodelabs/veneer/issues",
+                "source": "https://github.com/decodelabs/veneer/tree/v0.10.25"
+            },
+            "install-path": "../decodelabs/veneer"
+        },
+        {
+            "name": "decodelabs/wellspring",
+            "version": "v0.1.1",
+            "version_normalized": "0.1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/decodelabs/wellspring.git",
+                "reference": "4a3c4fc782aef1d610526e1ee3ed1a5ab6103710"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/decodelabs/wellspring/zipball/4a3c4fc782aef1d610526e1ee3ed1a5ab6103710",
+                "reference": "4a3c4fc782aef1d610526e1ee3ed1a5ab6103710",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "decodelabs/phpstan-decodelabs": "^0.6.7"
+            },
+            "time": "2024-03-04T17:24:25+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.1.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "DecodeLabs\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Wright",
+                    "email": "tom@inflatablecookie.com"
+                }
+            ],
+            "description": "PHP autoload management tools",
+            "support": {
+                "issues": "https://github.com/decodelabs/wellspring/issues",
+                "source": "https://github.com/decodelabs/wellspring/tree/v0.1.1"
+            },
+            "install-path": "../decodelabs/wellspring"
+        },
+        {
+            "name": "psr/container",
+            "version": "2.0.2",
+            "version_normalized": "2.0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/container.git",
+                "reference": "c71ecc56dfe541dbd90c5360474fbc405f8d5963"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/c71ecc56dfe541dbd90c5360474fbc405f8d5963",
+                "reference": "c71ecc56dfe541dbd90c5360474fbc405f8d5963",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4.0"
+            },
+            "time": "2021-11-05T16:47:00+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common Container Interface (PHP FIG PSR-11)",
+            "homepage": "https://github.com/php-fig/container",
+            "keywords": [
+                "PSR-11",
+                "container",
+                "container-interface",
+                "container-interop",
+                "psr"
+            ],
+            "support": {
+                "issues": "https://github.com/php-fig/container/issues",
+                "source": "https://github.com/php-fig/container/tree/2.0.2"
+            },
+            "install-path": "../psr/container"
+        },
+        {
+            "name": "psr/log",
+            "version": "1.1.4",
+            "version_normalized": "1.1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/d49695b909c3b7628b6289db5479a1c204601f11",
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "time": "2021-05-03T11:20:27+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/log/tree/1.1.4"
+            },
+            "install-path": "../psr/log"
+        },
+        {
+            "name": "symfony/polyfill-mbstring",
+            "version": "v1.30.0",
+            "version_normalized": "1.30.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "fd22ab50000ef01661e2a31d850ebaa297f8e03c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/fd22ab50000ef01661e2a31d850ebaa297f8e03c",
+                "reference": "fd22ab50000ef01661e2a31d850ebaa297f8e03c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "provide": {
+                "ext-mbstring": "*"
+            },
+            "suggest": {
+                "ext-mbstring": "For best performance"
+            },
+            "time": "2024-06-19T12:30:46+00:00",
+            "type": "library",
+            "extra": {
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Mbstring extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "mbstring",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.30.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "install-path": "../symfony/polyfill-mbstring"
+        },
+        {
+            "name": "yahnis-elsts/plugin-update-checker",
+            "version": "v5.4",
+            "version_normalized": "5.4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/YahnisElsts/plugin-update-checker.git",
+                "reference": "e8e53e6d98e37fa7c895c93417f52e3775494715"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/YahnisElsts/plugin-update-checker/zipball/e8e53e6d98e37fa7c895c93417f52e3775494715",
+                "reference": "e8e53e6d98e37fa7c895c93417f52e3775494715",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=5.6.20"
+            },
+            "time": "2024-02-24T09:56:49+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "load-v5p4.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Yahnis Elsts",
+                    "email": "whiteshadow@w-shadow.com",
+                    "homepage": "https://w-shadow.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A custom update checker for WordPress plugins and themes. Useful if you can't host your plugin in the official WP repository but still want it to support automatic updates.",
+            "homepage": "https://github.com/YahnisElsts/plugin-update-checker/",
+            "keywords": [
+                "automatic updates",
+                "plugin updates",
+                "theme updates",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/YahnisElsts/plugin-update-checker/issues",
+                "source": "https://github.com/YahnisElsts/plugin-update-checker/tree/v5.4"
+            },
+            "install-path": "../yahnis-elsts/plugin-update-checker"
+        }
+    ],
+    "dev": false,
+    "dev-package-names": []
+}

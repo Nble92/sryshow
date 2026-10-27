@@ -1,0 +1,66 @@
+.menu {
+  .menu-item {
+    transition: opacity 0.3s, transform .3s;
+
+    a {
+      display: grid;
+      justify-items: center;
+
+      img {
+        padding-bottom: 5px;
+      }
+    }
+
+    &.focus,
+    &:hover {
+      //border-bottom: 3px solid var(--syr-primary)!important;
+    }
+  }
+}
+
+.lms-header {
+  .left {
+    > .fl-node-content {
+      flex-direction: row;
+
+      .logo {
+        width: auto;
+      }
+    }
+  }
+}
+
+.active-menu-item {
+  &::after {
+    background: var(--syr-primary);
+    height: 3px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    content: '';
+    opacity: 1;
+    -webkit-transition: opacity 0.3s, -webkit-transform .3s;
+    -moz-transition: opacity 0.3s, -moz-transform .3s;
+    transition: opacity 0.3s, transform .3s;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    transform: translateY(10px);
+    pointer-events: none;
+  }
+}
+
+#menu-lms-main {
+  .current-page-ancestor,
+  .current_page_item,
+  .current-menu-item {
+    @extend .active-menu-item;
+  }
+
+  .single-mpcs-lesson &,
+  .single-mpcs-course & {
+    .menu-item-object-mpcs-course {
+      @extend .active-menu-item;
+    }
+  }
+}

@@ -1,0 +1,117 @@
+* {
+  --syr-primary: #B7925F;
+  --syr-secondary: #513A4E;
+  --syr-shade-1: #140F14;
+  --syr-shade-2: #FFEBFC;
+  --syr-shade-3: #FFF6EB;
+  --syr-shade-4: #998D97;
+  --syr-shade-5: #FFFFFF;
+  --syr-calm-accent-1: #7C8A48;
+  --syr-calm-accent-2: #E5B333;
+  --syr-calm-accent-3: #FCC983;
+  --syr-vibrant-accent-1: #F23024;
+  --syr-vibrant-accent-2: #F27824;
+  --syr-vibrant-accent-3: #F2B524;
+}
+
+.button-primary, .formkit-step-actions button, .button-secondary {
+  padding: 10px 28px 10px 28px;
+  text-transform: capitalize;
+  font-weight: bold;
+  border: 2px solid var(--syr-primary);
+  border-radius: 4px;
+}
+.button-primary:hover, .formkit-step-actions button:hover, .button-secondary:hover {
+  border: 2px solid var(--syr-primary);
+  border-radius: 4px;
+}
+
+.button-primary, .formkit-step-actions button {
+  background: var(--syr-shade-1);
+  color: var(--syr-shade-3);
+}
+.button-primary:hover, .formkit-step-actions button:hover {
+  background: var(--syr-shade-5);
+  color: var(--syr-shade-1);
+}
+.button-secondary {
+  background: var(--syr-shade-5);
+  color: var(--syr-shade-1);
+}
+.button-secondary:hover {
+  background: var(--syr-shade-1);
+  color: var(--syr-shade-3);
+}
+
+.formkit-step-actions {
+  margin-top: 40px;
+}
+.syr-header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 430px;
+}
+
+.syr-header .profile-menu .fl-has-submenu .sub-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+  text-align: left;
+}
+.syr-header .profile-menu .fl-has-submenu:hover .sub-menu {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+.syr-header .profile-menu .sub-menu {
+  background: white;
+  border: 2px solid var(--syr-primary);
+}
+.syr-header .profile-menu .sub-menu li {
+  padding: 8px 16px;
+  font-weight: 900;
+  background: var(--syr-shade-5);
+  color: var(--syr-secondary);
+  border-bottom: 1px solid var(--syr-shade-4);
+}
+.syr-header .profile-menu .sub-menu li:last-child {
+  border-bottom: 0;
+}
+.syr-header .profile-menu .sub-menu li:hover {
+  background: var(--syr-calm-accent-3);
+}
+.syr-header .profile-menu .user-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+.syr-header .profile-menu .user-details .meta {
+  padding-right: 12px;
+}
+.syr-header .profile-menu .user-details .meta .name {
+  margin: 0;
+}
+.syr-header .profile-menu .user-details .meta .grade {
+  font-size: 12px;
+}
+.syr-header .profile-menu .user-details img {
+  border-radius: 50%;
+  border: 2px solid var(--syr-shade-5);
+  box-shadow: 0 0 0 2px var(--syr-primary);
+}
+.syr-header .center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.syr-header .center img {
+  width: 24px;
+}
+.syr-header .center .search {
+  margin-right: 24px;
+}

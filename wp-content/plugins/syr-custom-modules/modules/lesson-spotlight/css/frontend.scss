@@ -1,0 +1,66 @@
+.syr-lesson-spotlight {
+  display: flex;
+
+  .tabs-nav {
+    width: 164px;
+    padding-right: 44px;
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 16px;
+        filter: grayscale(1);
+
+        &.active {
+          filter: grayscale(0);
+        }
+
+        .thumbnail {
+          width: 120px;
+          border: 2px solid var(--syr-shade-5);
+          box-shadow: 0 0 0 2px var(--syr-primary);
+          border-radius: 10px;
+          overflow: hidden;
+
+          &:hover {
+            cursor: pointer;
+          }
+
+          img  {
+            max-width: none!important;
+          }
+        }
+      }
+    }
+  }
+
+  .tabs-content {
+    .section {
+      color: var(--syr-shade-2);
+      display: none;
+      animation: fadeEffect 1s;
+
+      &.active {
+        display: block;
+      }
+
+      .title {
+        color: var(--syr-calm-accent-3);
+        margin-bottom: 24px;
+      }
+
+      .content {
+        font-size: 24px;
+        line-height: 40px;
+        font-weight: 600;
+      }
+    }
+
+    @keyframes fadeEffect {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  }
+}

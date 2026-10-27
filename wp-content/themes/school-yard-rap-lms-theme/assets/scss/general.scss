@@ -1,0 +1,81 @@
+.stretched-link {
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    // Just in case `pointer-events: none` is set on a parent
+    pointer-events: auto;
+    content: "";
+    // IE10 bugfix, see https://stackoverflow.com/questions/16947967/ie10-hover-pseudo-class-doesnt-work-without-background-color
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+.otgs-development-site-front-end,
+.wpml-ls-statics-footer {
+  display: none;
+}
+
+.card-with-button {
+  .thumbnail {
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+
+    .overlay {
+      @extend .button-overlay;
+    }
+  }
+
+  .info {
+    color: var(--syr-shade-5);
+    margin-top: 16px;
+    transition: all 0.3s linear;
+    opacity: 0;
+
+    h3,
+    h6 {
+      color: var(--syr-shade-5);
+    }
+  }
+
+  &:hover {
+    .info {
+      opacity: 1;
+    }
+  }
+}
+
+.fl-video-lightbox-wrap .mfp-content {
+  background: transparent!important;
+}
+
+.mfp-wrap.fl-video-lightbox-wrap .mfp-close, .mfp-wrap.fl-video-lightbox-wrap .mfp-close:hover {
+  color: #fff !important;
+  font-size: 36px !important;
+}
+
+.fl-video {
+  .fl-video-poster {
+    display: flex !important;
+    justify-content: center;
+
+    img {
+      width: initial;
+      height: 100%;
+      cursor: pointer;
+    }
+  }
+}
+
+.lesson-plan,
+.worksheet {
+  .lesson-modal-header {
+    > .fl-node-content {
+      display: flex;
+    }
+  }
+}

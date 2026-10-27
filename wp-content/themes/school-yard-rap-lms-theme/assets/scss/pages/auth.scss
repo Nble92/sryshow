@@ -1,0 +1,38 @@
+.mp_login_form {
+  input[type=submit] {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 240px;
+  }
+
+  .forgot-password {
+    display: flex;
+    justify-content: end;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  .submit {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .mepr-login-actions {
+    display: flex;
+    justify-content: center;
+
+    a {
+      font-weight: bold;
+      color: var(--syr-secondary);
+      text-decoration: none !important;
+      border-bottom: 1px solid var(--syr-secondary);
+
+      &:hover {
+        border-bottom: 1px solid var(--syr-primary);
+      }
+    }
+  }
+}

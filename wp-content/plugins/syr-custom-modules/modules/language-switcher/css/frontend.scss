@@ -1,0 +1,29 @@
+.language-switcher {
+  > span {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+  }
+
+  li {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .wpml-ls {
+    border: 2px solid var(--syr-primary);
+    border-radius: 4px;
+    width: 120px;
+
+    .wpml-ls-item-toggle {
+      border: 0;
+      padding-top: 9px;
+      padding-bottom: 9px;
+      padding-left: 16px;
+    }
+
+    .wpml-ls-link {
+      padding: 9px 16px;
+    }
+  }
+}

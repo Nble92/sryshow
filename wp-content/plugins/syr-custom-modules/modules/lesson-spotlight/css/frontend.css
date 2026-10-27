@@ -1,0 +1,58 @@
+.syr-lesson-spotlight {
+  display: flex;
+}
+.syr-lesson-spotlight .tabs-nav {
+  width: 164px;
+  padding-right: 44px;
+}
+.syr-lesson-spotlight .tabs-nav ul {
+  list-style: none;
+  padding: 0;
+}
+.syr-lesson-spotlight .tabs-nav ul li {
+  margin-bottom: 16px;
+  filter: grayscale(1);
+}
+.syr-lesson-spotlight .tabs-nav ul li.active {
+  filter: grayscale(0);
+}
+.syr-lesson-spotlight .tabs-nav ul li .thumbnail {
+  width: 120px;
+  border: 2px solid var(--syr-shade-5);
+  box-shadow: 0 0 0 2px var(--syr-primary);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.syr-lesson-spotlight .tabs-nav ul li .thumbnail:hover {
+  cursor: pointer;
+}
+.syr-lesson-spotlight .tabs-nav ul li .thumbnail img {
+  max-width: none !important;
+}
+.syr-lesson-spotlight .tabs-content .section {
+  color: var(--syr-shade-2);
+  display: none;
+  animation: fadeEffect 1s;
+}
+.syr-lesson-spotlight .tabs-content .section.active {
+  display: block;
+}
+.syr-lesson-spotlight .tabs-content .section .title {
+  color: var(--syr-calm-accent-3);
+  margin-bottom: 24px;
+}
+.syr-lesson-spotlight .tabs-content .section .content {
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 600;
+}
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=frontend.css.map */

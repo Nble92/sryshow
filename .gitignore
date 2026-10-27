@@ -1,0 +1,28 @@
+# Whitelist approach: ignore everything, then re-include only the custom code.
+# WordPress core, third-party plugins/themes, uploads, caches, backups and
+# wp-config.php (secrets) are intentionally NOT tracked.
+
+/*
+!/.gitignore
+
+# wp-content: only custom theme + custom plugins
+!/wp-content/
+/wp-content/*
+
+!/wp-content/themes/
+/wp-content/themes/*
+!/wp-content/themes/school-yard-rap-lms-theme/
+
+!/wp-content/plugins/
+/wp-content/plugins/*
+!/wp-content/plugins/syr-custom-modules/
+!/wp-content/plugins/syr-lms-account/
+
+# General junk inside tracked folders
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

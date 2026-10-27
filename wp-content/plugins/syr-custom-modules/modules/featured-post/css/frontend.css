@@ -1,0 +1,65 @@
+.syr-featured-post {
+  background: #FFF6EB;
+  padding: 0 !important;
+  max-width: 542px;
+  gap: 24px;
+  border-radius: 32px 32px 16px 16px;
+  margin: 0 auto;
+}
+.syr-featured-post .thumbnail {
+  position: relative;
+}
+.syr-featured-post .thumbnail img {
+  border-radius: 16px;
+  max-width: 534px !important;
+  width: calc(100% - 8px);
+  margin-left: 8px;
+  border: 4px solid #FFFFFF;
+  box-shadow: -4px 4px 0px 0px #140F14, -8px 8px 0px 0px #B7925F;
+}
+.syr-featured-post .thumbnail .tag {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  background: #FFFFFF;
+  padding: 8px 24px;
+  border: 2px solid #B7925F;
+  box-shadow: 0px 2px 0px 0px #140F14;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.syr-featured-post .content {
+  padding: 24px 24px;
+}
+.syr-featured-post .info {
+  padding: 8px 16px;
+  border-radius: 16px;
+  background: #FCC983;
+  display: inline-flex;
+  font-weight: bold;
+}
+.syr-featured-post .info .separator {
+  padding: 0 16px;
+}
+
+.mpcs-course.syr-featured-post {
+  background: #513A4E;
+}
+.mpcs-course.syr-featured-post h4,
+.mpcs-course.syr-featured-post .title,
+.mpcs-course.syr-featured-post .content,
+.mpcs-course.syr-featured-post .tag {
+  color: #ffffff;
+}
+.mpcs-course.syr-featured-post .tag {
+  background: #140F14;
+  box-shadow: 0px 2px 0px 0px #FFFFFF;
+}
+.mpcs-course.syr-featured-post .info {
+  background: #FFEBFC;
+  color: #513A4E;
+}
+
+/*# sourceMappingURL=frontend.css.map */

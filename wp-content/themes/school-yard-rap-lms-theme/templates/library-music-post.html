@@ -1,0 +1,19 @@
+<div class="music-content">
+    [wpbb-if post:featured_image]
+    <div class="uabb-post-thumbnail uabb-blog-post-section">
+        [wpbb post:featured_image size="book-image" display="tag" linked="yes"]
+    </div>
+    [/wpbb-if]
+
+    <div class="meta">
+        <div class="left">
+            <h4 class="book-heading">[wpbb post:link text="title"]</h4>
+            <span class="book-author">[wpbb post:acf type='text' name='author']</span>
+        </div>
+        <div class="right">
+            <a href="[wpbb post:acf type='url' name='link']">
+                <i class="fl-button-icon fl-button-icon-before icon-download"></i>
+            </a>
+        </div>
+    </div>
+</div>

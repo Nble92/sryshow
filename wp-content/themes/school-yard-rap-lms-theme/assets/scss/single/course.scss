@@ -1,0 +1,38 @@
+.fl-theme-builder-singular-course,
+.single-mpcs-course {
+  .course {
+    .fl-row-content-wrap {
+      &:after {
+        background-image: linear-gradient(180deg, rgba(20, 15, 20, 0.25) 0%, #140F14 100%), linear-gradient(270deg, rgba(20, 15, 20, 0.25) 0%, #140F14 100%) !important;
+      }
+
+      .course-info {
+        display: inline-flex;
+        font-weight: 500;
+        color: var(--syr-shade-5);
+
+        .separator {
+          padding: 0 8px;
+        }
+      }
+    }
+  }
+
+  .lessons {
+    .uabb-blog-posts-shadow {
+      box-shadow: none !important;
+      transition: all 0.3s linear;
+    }
+  }
+
+  .breadcrumbs {
+    a {
+      i {
+        font-size: 14px !important;
+      }
+
+      color: var(--syr-shade-5);
+      font-weight: normal;
+    }
+  }
+}

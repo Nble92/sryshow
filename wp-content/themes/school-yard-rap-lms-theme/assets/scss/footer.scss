@@ -1,0 +1,45 @@
+.fl-page {
+  footer {
+    .footer-credits {
+      background: var(--syr-shade-5);
+
+      ul {
+        display: flex;
+        column-gap: 32px;
+
+        li {
+          list-style-type: none;
+          font-weight: 600;
+        }
+      }
+
+      .parent-library & {
+        background: var(--syr-shade-5);
+        color: var(--syr-secondary);
+      }
+
+      .parent-records & {
+        background: var(--syr-primary);
+        color: var(--syr-secondary);
+      }
+
+      .post-type-archive-mpcs-course &,
+      .fl-theme-builder-archive-courses & {
+        background: transparent !important;
+        color: var(--syr-shade-4);
+      };
+
+      .single-mpcs-course &,
+      .fl-theme-builder-singular-course & {
+        background: linear-gradient(0.04deg, #140F14 0.013%, #140F14 99.7%);
+        color: var(--syr-shade-4);
+      };
+
+      .single-mpcs-lesson &,
+      .fl-theme-builder-singular-lesson & {
+        background: linear-gradient(0.04deg, #140F14 0.013%, #140F14 99.7%);
+        color: var(--syr-shade-4);
+      }
+    }
+  }
+}

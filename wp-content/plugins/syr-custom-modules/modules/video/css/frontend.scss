@@ -1,0 +1,90 @@
+.syr-wp-video {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  padding: 0 0 56.25%;
+  border: 4px solid #FFFFFF;
+  box-shadow: -8px 8px 0px 0px #140F14, -16px 16px 0px 0px #B7925F;
+  border-radius: 32px 0 32px 0;
+
+  .wp-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+
+    .mejs-container,
+    .mejs-inner,
+    .mejs-layers,
+    .mejs-layer {
+      width: 100% !important;
+      height: 100% !important;
+    }
+
+    .mejs-container {
+      &:hover {
+        .mejs-controls {
+          background: rgba(0, 0, 0, .35);
+        }
+      }
+
+      .mejs-controls {
+        background: transparent;
+
+        .mejs-time-rail {
+          .mejs-time-current {
+            background: #B7925F;
+          }
+        }
+      }
+
+      .mejs-overlay-button {
+        background: url('/wp-content/plugins/syr-custom-modules/modules/video/images/play.svg');
+        background-position: initial;
+        height: 72px;
+        width: 72px;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  &-sticky {
+    position: fixed;
+    top: 20px;
+    z-index: 11;
+  }
+
+  .wp-video-shortcode,
+  .me-plugin,
+  .me-plugin * {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+.mfp-container {
+  .syr-wp-video-lightbox-content {
+    .wp-video {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .fluid-width-video-wrapper {
+    iframe {
+      width: 80%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+.fl-module-syr-wp-video .syr-wp-video-poster {
+  cursor: pointer;
+}
+
+

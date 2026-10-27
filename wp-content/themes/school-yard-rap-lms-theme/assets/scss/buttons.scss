@@ -1,0 +1,101 @@
+.button-primary, .button-secondary {
+  padding: 10px 28px 10px 28px !important;
+  text-transform: uppercase !important;
+  font-weight: bold !important;
+  border: 2px solid var(--syr-primary) !important;
+  border-radius: 4px !important;
+  font-size: 16px !important;
+  line-height: 1 !important;
+
+  &:hover {
+    border: 2px solid var(--syr-primary) !important;
+    border-radius: 4px !important;
+  }
+}
+
+.button {
+  &-primary {
+    background: var(--syr-shade-1) !important;
+    color: var(--syr-shade-3) !important;
+
+    &:hover {
+      background: var(--syr-shade-5) !important;
+      color: var(--syr-shade-1) !important;
+    }
+  }
+
+  &-secondary {
+    background: var(--syr-shade-5) !important;
+    color: var(--syr-shade-1) !important;
+
+    &:hover {
+      background: var(--syr-shade-1) !important;
+      color: var(--syr-shade-3) !important;
+    }
+  }
+}
+
+.fl-page {
+  .button-primary {
+    @extend .button-primary;
+  }
+
+  .button-secondary {
+    @extend .button-secondary;
+  }
+}
+
+.fl-page {
+  .mp_login_form {
+    .button-primary {
+      @extend .button-primary;
+    }
+  }
+
+  .button-secondary {
+    @extend .button-secondary;
+  }
+
+  input:not([type=submit]) {
+    border: 2px solid var(--syr-shade-4);
+    border-radius: 4px;
+    padding: 10px 14px 10px 14px;
+  }
+
+  .button.mp-hide-pw {
+    right: 2px;
+    top: 2px;
+    height: calc(100% - 4px);
+  }
+}
+
+input[type='submit'] {
+  @extend .button-primary;
+}
+
+.fl-builder-content .fl-button i {
+  margin-right: 0 !important;
+}
+
+.button-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.25);
+
+    a {
+      display: block;
+    }
+  }
+
+  a {
+    @extend .button-primary;
+    display: none;
+  }
+}

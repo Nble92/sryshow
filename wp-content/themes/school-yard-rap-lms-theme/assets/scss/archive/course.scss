@@ -1,0 +1,33 @@
+.post-type-archive-mpcs-course,
+.fl-theme-builder-archive-courses {
+  background: linear-gradient(0.04deg, #140F14 0.03%, #513A4E 99.97%) fixed;
+
+  .fl-page-content {
+    background-color: transparent;
+  }
+
+  .lower-section-title {
+    .fl-heading {
+      display: inline-block;
+      padding: 8px 32px 8px 32px !important;
+      border-radius: 8px;
+      background: #4D374A;
+    }
+  }
+
+  .courses {
+    .uabb-blog-posts-shadow {
+      box-shadow: none !important;
+      transition: all 0.3s linear;
+    }
+
+    .syr-course-card {
+      @extend .card-with-button;
+
+      .thumbnail {
+        border: 4px solid #FFF6EB;
+        box-shadow: 0 8px 0 0 #B7925F, 0 4px 0 0 #140F14;
+      }
+    }
+  }
+}

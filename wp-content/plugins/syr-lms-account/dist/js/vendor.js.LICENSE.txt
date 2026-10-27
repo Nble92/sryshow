@@ -1,0 +1,17 @@
+/*!
+ * Signature Pad v5.0.2 | https://github.com/szimek/signature_pad
+ * (c) 2024 Szymon Nowak | Released under the MIT license
+ */
+
+/*!
+ * Vueform v1.10.4 (https://github.com/vueform/vueform)
+ * Copyright (c) 2024 Adam Berecz <adam@vueform.com>
+ * Licensed under the MIT License
+ */
+
+/**!
+ * Sortable 1.15.2
+ * @author	RubaXa   <trash@rubaxa.org>
+ * @author	owenm    <owen23355@gmail.com>
+ * @license MIT
+ */

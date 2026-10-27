@@ -1,0 +1,59 @@
+.syr-header-module {
+  display: flex;
+  justify-content: space-between;
+  max-width: 430px;
+}
+.syr-header-module .profile-menu .fl-has-submenu .sub-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+  text-align: left;
+}
+.syr-header-module .profile-menu .fl-has-submenu:hover .sub-menu {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+.syr-header-module .profile-menu .sub-menu {
+  background: white;
+  border: 2px solid var(--syr-primary);
+}
+.syr-header-module .profile-menu .sub-menu li {
+  padding: 8px 16px;
+  font-weight: 900;
+  background: var(--syr-shade-5);
+  color: var(--syr-secondary);
+  border-bottom: 1px solid var(--syr-shade-4);
+}
+.syr-header-module .profile-menu .sub-menu li:last-child {
+  border-bottom: 0;
+}
+.syr-header-module .profile-menu .sub-menu li:hover {
+  background: var(--syr-calm-accent-3);
+}
+.syr-header-module .profile-menu .user-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+.syr-header-module .profile-menu .user-details .meta {
+  padding-right: 12px;
+}
+.syr-header-module .profile-menu .user-details .meta .name {
+  margin: 0;
+}
+.syr-header-module .profile-menu .user-details .meta .grade {
+  font-size: 12px;
+}
+.syr-header-module .profile-menu .user-details img {
+  border-radius: 50%;
+  border: 2px solid var(--syr-shade-5);
+  box-shadow: 0 0 0 2px var(--syr-primary);
+}
+
+/*# sourceMappingURL=frontend.css.map */

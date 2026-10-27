@@ -1,0 +1,92 @@
+.syr-records-wrapper {
+  background: #8D633D;
+  box-shadow: 0 0 4px 0 #382B21 inset;
+  padding: 30px 40px 120px;
+  position: relative;
+}
+@media (max-width: 992px) {
+  .syr-records-wrapper {
+    padding: 30px 30px 80px;
+  }
+}
+@media (max-width: 768px) {
+  .syr-records-wrapper {
+    padding: 20px 20px 60px;
+  }
+}
+.syr-records-wrapper .record-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: #382B21;
+  box-shadow: -10px 10px 2px 0 #1C1611 inset;
+  padding: 40px 24px 0;
+  margin-bottom: 30px;
+}
+.syr-records-wrapper .record-row:last-child {
+  margin-bottom: 0;
+}
+.syr-records-wrapper .record-row .record {
+  display: flex;
+  padding: 15px 15px 0;
+  position: relative;
+  cursor: pointer;
+}
+@media (max-width: 992px) {
+  .syr-records-wrapper .record-row {
+    padding: 30px 10px 0;
+  }
+}
+@media (max-width: 768px) {
+  .syr-records-wrapper .record-row {
+    padding: 10px 0 0;
+    margin-bottom: 20px;
+  }
+}
+.syr-records-wrapper .records-pagination a {
+  position: absolute;
+  top: 50%;
+  display: block;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: #8D633D;
+  padding: 12px 18px;
+  box-shadow: 0 2px 1px 0 #382B21 inset, 0 1px 2px 0 rgba(255, 205, 134, 0.5019607843);
+  border-radius: 50%;
+  width: auto;
+  height: auto;
+  font-size: 0;
+  line-height: 0;
+}
+.syr-records-wrapper .records-pagination a i {
+  font-size: 24px;
+  color: #FCC983;
+}
+.syr-records-wrapper .records-pagination a:before {
+  content: "";
+  font-size: 0;
+  line-height: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.syr-records-wrapper .records-pagination .records-prev {
+  left: -55px;
+  z-index: 1;
+}
+@media (max-width: 992px) {
+  .syr-records-wrapper .records-pagination .records-prev {
+    left: -15px;
+  }
+}
+.syr-records-wrapper .records-pagination .records-next {
+  right: -55px;
+  z-index: 1;
+}
+@media (max-width: 992px) {
+  .syr-records-wrapper .records-pagination .records-next {
+    right: -15px;
+  }
+}
+
+/*# sourceMappingURL=frontend.css.map */
